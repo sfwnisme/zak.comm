@@ -1,0 +1,221 @@
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Ubuntu", sans-serif; /*FW 300 400 500 700 */
+  /* overflow-x: hidden; */
+}
+
+/* Small Screens */
+@media (min-width: 768px) {
+  .cont {
+    width: 750px;
+  }
+}
+/* medium Screens */
+@media (min-width: 992px) {
+  .cont {
+    width: 970px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .cont {
+    width: 1150px;
+  }
+}
+
+/*  End Media Query */
+
+.cont {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+:root {
+  --first-color: black;
+  --first-color-light: #868686;
+  --second-color: #1b6fff;
+  --second-color-light: #e9effa;
+  --second-color-shadow: #e0e6f1;
+  --main-padding: 60px;
+  --branch-padding: 20px;
+  --small-padding: 10px;
+  --tran: 0.5s;
+  --tran-2: 0.2s;
+}
+
+/* 
+    General Components
+*/
+
+/* Start Header */
+
+header {
+  background-color: white;
+  block-size: 80px;
+  display: flex;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+header .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+header .cont .logo {
+  color: var(--first-color);
+  flex: 1;
+}
+header .cont .logo a {
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 700;
+  color: var(--first-color);
+}
+@media (min-width: 768px) {
+  header .cont .links span {
+    display: none;
+  }
+}
+header .cont .links span {
+  color: var(--first-color);
+  font-size: 30px;
+  position: relative;
+}
+header .cont .links:hover span::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: -20px;
+  background-color: transparent;
+  inline-size: 100px;
+  block-size: 30px;
+}
+@media (min-width: 768px) {
+  header .cont .links {
+    block-size: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+}
+header .cont .links ul {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  header .cont .links ul {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    inline-size: 100%;
+    block-size: calc(100vh - 80px);
+    flex-direction: column;
+    justify-content: center;
+    transition: var(--tran);
+    -webkit-transition: var(--tran) linear;
+    -moz-transition: var(--tran);
+    -ms-transition: var(--tran);
+    -o-transition: var(--tran);
+    /* transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%); */
+    /* opacity: 0;
+    z-index: -1; */
+  }
+}
+@media (max-width: 767px) {
+  header .cont .links:hover ul {
+    /* transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0); */
+    right: 0;
+    opacity: 1;
+    z-index: 1;
+  }
+}
+header .cont .links ul li {
+  position: relative;
+  block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .cont .links ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--second-color);
+  inline-size: 0;
+  block-size: 2px;
+  transition: var(--tran);
+  -webkit-transition: var(--tran);
+  -moz-transition: var(--tran);
+  -ms-transition: var(--tran);
+  -o-transition: var(--tran);
+}
+header .cont .links ul li:hover::before {
+  inline-size: 100%;
+}
+@media (max-width: 767px) {
+  header .cont .links ul li {
+    inline-size: 100%;
+    padding-block: 0;
+  }
+}
+header .cont .links ul li a {
+  color: var(--second-color);
+  inline-size: 100%;
+  block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: var(--branch-padding);
+  font-size: clamp(14px, 2vw, 18px);
+}
+header .cont .links ul li:hover a {
+  background-color: var(--second-color-light);
+  box-shadow: 0px 0px 20px inset var(--second-color-shadow);
+}
+@media (max-width: 767px) {
+  header .cont .links ul li a {
+    inline-size: 100%;
+    block-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0;
+    transition: var(--tran-2) linear;
+    -webkit-transition: var(--tran-2) linear;
+    -moz-transition: var(--tran-2) linear;
+    -ms-transition: var(--tran-2) linear;
+    -o-transition: var(--tran-2) linear;
+  }
+}
+
+/* End Header */
+/* Start Landign Page */
+
+.land {
+  background-image: url(../imgs/landing\ page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  block-size: calc(100vh - 80px);
+  overflow-x: hidden;
+}
+
+/* End Landign Page */
