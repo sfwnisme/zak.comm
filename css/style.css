@@ -7,7 +7,7 @@ html,
 	font-size: 10px;
 }
 ::selection {
-  background-color: var(--second-color-light);
+	background-color: var(--second-color-light);
 }
 body {
 	font-family: "Ubuntu", sans-serif; /*FW 300 400 500 700 */
@@ -299,10 +299,15 @@ header .cont .links ul li a:hover {
 	font-weight: 300;
 	line-height: 1.5;
 }
+@media (max-width: 767px) {
+	.land .cont .hero-text p {
+		padding-block: 0 40px;
+	}
+}
 
 .land .cont .social {
 	position: absolute;
-	bottom: 0;
+	bottom: 15px;
 }
 .land .cont .social ul {
 	background-color: var(--second-color-light);
