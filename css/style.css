@@ -1,358 +1,150 @@
-html,
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-	font-size: 10px;
-}
-::selection {
-	background-color: var(--second-color-light);
-}
-body {
-	font-family: "Ubuntu", sans-serif; /*FW 300 400 500 700 */
-	overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Small Screens */
-@media (min-width: 768px) {
-	.cont {
-		width: 750px;
-	}
-}
-/* medium Screens */
-@media (min-width: 992px) {
-	.cont {
-		width: 970px;
-	}
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Normalize Css File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Zak</title>
+</head>
 
-/* Large Screens */
-@media (min-width: 1200px) {
-	.cont {
-		width: 1150px;
-	}
-}
+<body ontouchstart="" onmouseover="">
 
-/*  End Media Query */
+    <head>
+        <header>
+            <div class="cont">
+                <div class="logo">
+                    <a href="">Zak.</a>
+                </div>
+                <div class="links">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#abilities">Abilities</a></li>
+                        <li><a href="#work-space">Work Space</a></li>
+                        <li><a href="#work-space">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="home" class="about">
+            <div class="cont">
+                <div class="image">
+                    <img src="imgs/Profile Pic.jpg" alt="">
+                </div>
+                <div class="hero-text">
+                    <h1>ZAKARIA HABABI</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur beatae similique
+                        consectetur dolorum excepturi, fugiat deleniti! Libero asperiores, porro quaerat cumque,
+                        eligendi maxime quod excepturi magni, voluptates aliquid quasi?</p>
+                </div>
+                <div class="social">
 
-.cont {
-	padding-inline: 15px;
-	margin-inline: auto;
-}
+                    <ul>
+                        <li>
+                            <a href="https://www.behance.net/zakariahababe">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/zakariahababe">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/zakariahababe">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/zakariahababe">
+                                <i class="fa-brands fa-square-behance"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="data"></div>
+                </div>
+            </div>
+        </div>
+    </head>
+    <div class="works" id="work-space">
+        <div class="cont">
+            <div class="title">
+                <h1>My Works</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+            </div>
+            <div class="box">
+                <div class="info">
+                    <div class="image">
+                        <img src="/imgs/works/1 (1).jpg" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="image">
+                        <img src="/imgs/works/1 (2).jpg" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="image">
+                        <img src="/imgs/works/1 (3).jpg" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="image">
+                        <img src="/imgs/works/1 (4).jpg" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="image">
+                        <img src="/imgs/works/1 (5).jpg" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="image">
+                        <img src="/imgs/works/1 (6).jpg" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-:root {
-	--first-color: black;
-	--first-color-light: #777;
-	--second-color: #6e8cb4;
-	--second-color-light: #d0e2fa;
-	--second-color-shadow: #bdcde263;
-	--font-color: #354457;
-	--main-padding: 60px;
-	--branch-padding: 20px;
-	--small-padding: 10px;
-	--tran: 0.5s;
-	--tran-2: 0.25s;
-}
+</body>
 
-/* 
-    General Components
-*/
-head {
-	min-block-size: 100vh;
-}
-/* Start Header */
-
-header {
-	background-color: white;
-	block-size: 60px;
-	display: flex;
-	position: relative;
-	/* overflow-x: hidden; */
-}
-header .cont {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex: 1;
-}
-header .cont .logo {
-	color: var(--first-color);
-	flex: 1;
-}
-header .cont .logo a {
-	font-size: clamp(30px, 4vw, 40px);
-	font-weight: 700;
-	color: var(--first-color);
-}
-@media (min-width: 768px) {
-	header .cont .links span {
-		display: none;
-	}
-}
-header .cont .links span {
-	color: var(--font-color);
-	font-size: 30px;
-	position: relative;
-}
-header .cont .links:hover span::before {
-	content: "";
-	position: absolute;
-	top: 100%;
-	right: -10px;
-	background-color: transparent;
-	inline-size: 100px;
-	block-size: 30px;
-}
-@media (min-width: 768px) {
-	header .cont .links {
-		block-size: 100%;
-		display: flex;
-		justify-content: center;
-		/* align-items: center; */
-	}
-}
-
-header .cont .links ul {
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-@media (max-width: 767px) {
-	header .cont .links ul {
-		position: absolute;
-		right: 0;
-		top: 100%;
-		block-size: 0%;
-		inline-size: 100%;
-		flex-direction: column;
-		justify-content: center;
-		transition: var(--tran-2);
-		-webkit-transition: var(--tran-2);
-		-moz-transition: var(--tran-2);
-		-ms-transition: var(--tran-2);
-		-o-transition: var(--tran-2);
-		opacity: 0;
-		z-index: -1;
-		overflow: hidden;
-		box-shadow: 0px 20px 50px var(--second-color-shadow);
-	}
-}
-@media (max-width: 767px) {
-	header .cont .links:hover ul {
-		block-size: 50vh;
-		opacity: 1;
-		z-index: 2;
-	}
-}
-header .cont .links ul li {
-	position: relative;
-	block-size: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-}
-header .cont .links ul li::before {
-	content: "";
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	background-color: var(--second-color-shadow);
-	inline-size: 100%;
-	block-size: 0;
-	transition: var(--tran);
-	-webkit-transition: var(--tran);
-	-moz-transition: var(--tran);
-	-ms-transition: var(--tran);
-	-o-transition: var(--tran);
-	z-index: -1;
-	transform: translatex(-50%);
-	-webkit-transform: translatex(-50%);
-	-moz-transform: translatex(-50%);
-	-ms-transform: translatex(-50%);
-	-o-transform: translatex(-50%);
-}
-header .cont .links ul li:hover::before {
-	block-size: 3px;
-}
-@media (max-width: 767px) {
-	header .cont .links ul li:hover::before {
-		block-size: 100%;
-	}
-}
-@media (max-width: 767px) {
-	header .cont .links ul li {
-		inline-size: 100%;
-		padding-block: 0;
-	}
-}
-header .cont .links ul li a {
-	color: var(--second-color);
-	inline-size: 100%;
-	block-size: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-inline: var(--branch-padding);
-	font-size: clamp(14px, 2vw, 16px);
-	font-weight: 300;
-}
-header .cont .links ul li a:hover {
-	transform: scale(0.95);
-	-webkit-transform: scale(0.95);
-	-moz-transform: scale(0.95);
-	-ms-transform: scale(0.95);
-	-o-transform: scale(0.95);
-}
-
-@media (max-width: 767px) {
-	header .cont .links ul li a {
-		inline-size: 100%;
-		block-size: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-inline: 0;
-		transition: var(--tran-2) linear;
-		-webkit-transition: var(--tran-2) linear;
-		-moz-transition: var(--tran-2) linear;
-		-ms-transition: var(--tran-2) linear;
-		-o-transition: var(--tran-2) linear;
-	}
-}
-
-/* End Header */
-/* Start Landign Page */
-
-.land {
-	padding-block: var(--main-padding);
-	block-size: calc(100vh - 60px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-}
-
-.land .cont {
-	/* background-color: var(--second-color-light);
-  width: fit-content; */
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	gap: 20px;
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-}
-.land .cont .image {
-	max-inline-size: 300px;
-	margin-inline: auto;
-
-	/* overflow-x: hidden; */
-	position: relative;
-	z-index: 1;
-}
-.land .cont .image::before {
-	content: "";
-	position: absolute;
-	top: -10px;
-	left: -10px;
-	background-color: var(--second-color-light);
-	inline-size: fit-content;
-	block-size: 50%;
-	inline-size: 50%;
-	z-index: -1;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-}
-.land .cont .image img {
-	max-inline-size: 100%;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-}
-.land .cont .hero-text {
-	max-inline-size: 700px;
-}
-.land .cont .hero-text h1 {
-	color: var(--second-color);
-	font-size: clamp(3rem, 8vmin, 7rem);
-	margin-block: 0 2rem;
-}
-.land .cont .hero-text p {
-	color: var(--font-color);
-	padding-block: 0 70px;
-	font-size: clamp(1.5rem, 2vw, 2rem);
-	font-weight: 300;
-	line-height: 1.5;
-}
-@media (max-width: 767px) {
-	.land .cont .hero-text p {
-		padding-block: 0 40px;
-	}
-}
-
-.land .cont .social {
-	position: absolute;
-	bottom: 15px;
-}
-.land .cont .social ul {
-	background-color: var(--second-color-light);
-	display: flex;
-	gap: 4px;
-	padding: 2px;
-	opacity: 0;
-	z-index: -1;
-	transform: translatey(5px);
-	-webkit-transform: translatey(4px);
-	-moz-transform: translatey(4px);
-	-ms-transform: translatey(4px);
-	-o-transform: translatey(4px);
-	transition: var(--tran) linear;
-	-webkit-transition: var(--tran) linear;
-	-moz-transition: var(--tran) linear;
-	-ms-transition: var(--tran) linear;
-	-o-transition: var(--tran) linear;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-}
-
-.land .cont .social:hover ul {
-	opacity: 1;
-	z-index: 1;
-	transform: translatey(-10px);
-	-webkit-transform: translatey(-10px);
-	-moz-transform: translatey(-10px);
-	-ms-transform: translatey(-10px);
-	-o-transform: translatey(-10px);
-}
-.land .cont .social ul li {
-}
-.land .cont .social ul li a {
-}
-.land .cont .social ul li span {
-	color: var(--second-color);
-	font-size: clamp(3rem, 2vw, 3.5rem);
-}
-.land .cont .social > span {
-	color: var(--font-color);
-	font-size: clamp(3.5rem, 2vw, 4rem);
-}
-
-/* End Landign Page */
+</html>
