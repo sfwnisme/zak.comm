@@ -44,10 +44,11 @@ body {
 .title h1 {
 	color: var(--second-color);
 	font-size: clamp(3rem, 5vw, 4rem);
+	padding-block: 0 15px;
 }
 .title p {
 	color: var(--font-color);
-	font-size: clamp(1.5rem, 5vw, 2rem);
+	font-size: clamp(1.5rem, 2vw, 2rem);
 	font-weight: 300;
 }
 
