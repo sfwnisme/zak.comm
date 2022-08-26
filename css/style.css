@@ -49,11 +49,67 @@ body {
 }
 .title p {
 	color: var(--font-color);
-	font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+	font-size: clamp(1.6rem, 2.5vw, 2rem);
 	font-weight: 300;
 }
 
 /* Start Text Components */
+
+/* Start Box Components */
+
+.cont .box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+.cont .box .info {
+	/* background-color: rgb(195, 0, 0); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 0px 0px 20px var(--second-color-shadow);
+}
+.cont .box .info .image {
+	inline-size: 100%;
+	padding-block: 0 20px;
+	flex: 1;
+}
+.cont .box .info .image img {
+	max-inline-size: 100%;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.cont .box .info .info-text {
+	align-self: flex-end;
+}
+@media (max-width: 767px) {
+	.cont .box .info .info-text {
+		text-align: center;
+	}
+}
+.cont .box .info .info-text h3 {
+	color: var(--second-color);
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	padding-block: 0 10px;
+}
+.cont .box .info .info-text p {
+	color: var(--font-color);
+	font-size: clamp(1.5rem, 2vw, 1.6rem);
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+/* End Box Components */
 
 /*  End Media Query */
 
@@ -67,6 +123,7 @@ body {
 	--first-color-light: #777;
 	--second-color: #6e8cb4;
 	--second-color-light: #d0e2fa;
+	--second-color-light: #e1edfc;
 	--second-color-shadow: #bdcde263;
 	/* --font-color: #354457; */
 	--font-color: #465b75;
@@ -99,8 +156,7 @@ header .cont {
 	justify-content: space-between;
 	align-items: center;
 	flex: 1;
-	position: fixed;
-	/* position: absolute; */
+	/* position: fixed; */
 	width: inherit;
 	block-size: inherit;
 	z-index: 1;
@@ -320,7 +376,7 @@ header .cont .links ul li a:hover {
 .about .cont .hero-text p {
 	color: var(--font-color);
 	padding-block: 0 30px;
-	font-size: clamp(1.5rem, 2vw, 2rem);
+	font-size: clamp(1.6rem, 2vw, 2rem);
 	font-weight: 300;
 	line-height: 1.5;
 }
@@ -457,6 +513,30 @@ header .cont .links ul li a:hover {
 }
 /* End aboutign Page */
 
+/* Start Clients */
+
+.clients {
+	/* inline-size: calc(auto - 70px); */
+	padding-block: 0px var(--main-padding);
+}
+.clients .cont {
+}
+.clients .cont .box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.clients .cont .box .image {
+	inline-size: 150px;
+}
+.clients .cont .box .image img {
+	max-inline-size: 100%;
+	opacity: 0.5;
+}
+
+/* End Clients */
+
 /* Start Works */
 
 .works {
@@ -518,6 +598,9 @@ header .cont .links ul li a:hover {
 	font-weight: 300;
 	line-height: 1.5;
 }
+.logos {
+	/* block-size:calc(auto - 70px) ; */
+}
 /* End Works */
 
 /* Start Proficiency */
@@ -536,6 +619,7 @@ header .cont .links ul li a:hover {
 .prof .cont .info {
 	display: flex;
 	justify-content: center;
+	/* align-items: center; */
 	gap: 50px;
 }
 @media (max-width: 991px) {
@@ -558,12 +642,10 @@ header .cont .links ul li a:hover {
 }
 .prof .cont .info .skill-box {
 	flex: 1;
-	/* flex-basis: 1; */
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
+	justify-content: space-between;
 	align-items: center;
-	gap: 30px;
 }
 .prof .cont .info .skill-box .skill {
 	background-color: white;
@@ -572,6 +654,19 @@ header .cont .links ul li a:hover {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0px 0px 20px var(--second-color-shadow);
+	transition: var(--tran-2);
+	-webkit-transition: var(--tran-2);
+	-moz-transition: var(--tran-2);
+	-ms-transition: var(--tran-2);
+	-o-transition: var(--tran-2);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.prof .cont .info .skill-box .skill:hover {
+	background-color: var(--second-color-light);
 }
 @media (max-width: 991px) {
 	.prof .cont .info .skill-box .skill {
@@ -605,6 +700,114 @@ header .cont .links ul li a:hover {
 }
 
 /* End Proficiency */
+/* Start Footer */
+footer {
+	background-color: var(--second-color-light);
+	padding-block: var(--main-padding);
+}
+footer .cont {
+}
+footer .cont {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; */
+}
+footer .title h1 a {
+	color: var(--first-color);
+	font-size: clamp(3rem, 5vw, 5rem);
+}
+footer .cont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .cont .box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 80px;
+}
+footer .cont .box .info {
+	align-items: initial;
+	justify-content: initial;
+	box-shadow: none;
+	gap: 10px;
+}
+@media (max-width: 767px) {
+	footer .cont .box .info {
+		text-align: center;
+		align-items: center;
+	}
+}
+footer .cont .box .info h3 {
+	color: var(--first-color);
+	font-size: clamp(1.8rem, 2vw, 2rem);
+}
+
+footer .cont .box .info p a {
+	color: var(--font-color);
+	display: block;
+	font-size: clamp(1.5rem, 2vw, 1.6rem);
+	font-weight: 400;
+	text-decoration: underline;
+}
+footer .cont .box .brief p {
+	color: var(--first-color);
+	font-size: clamp(1.5rem, 2vw, 1.6rem);
+	font-weight: 300;
+	line-height: 1.5;
+}
+footer .cont .box .brief a {
+	background-color: var(--font-color);
+	color: white;
+	inline-size: fit-content;
+	font-size: clamp(1.5rem, 2vw, 1.6rem);
+	display: inline-block;
+	padding: 10px 30px;
+	transition: var(--tran-2);
+	-webkit-transition: var(--tran-2);
+	-moz-transition: var(--tran-2);
+	-ms-transition: var(--tran-2);
+	-o-transition: var(--tran-2);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+footer .cont .box .brief a:hover {
+	background-color: var(--second-color);
+}
+/* End Footer */
+
+/* Start Copy Rights */
+
+main {
+	background-color: var(--font-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 10px;
+}
+main .cont {
+	display: flex;
+}
+main .cont span {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-inline: auto;
+	gap: 10px;
+	font-size: 1.6rem;
+}
+main .cont span a {
+}
+main .cont span a img {
+	inline-size: 30px;
+}
+
+/* End Copy Rights */
 
 /* Start Keyframes */
 
