@@ -339,7 +339,7 @@ header .cont .links ul li a:hover {
 }
 @media (max-width: 767px) {
 	.about .cont .social {
-		bottom: 40px;
+		bottom: 60px;
 	}
 }
 .about .cont .social ul {
