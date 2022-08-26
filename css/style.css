@@ -1,150 +1,542 @@
-<!DOCTYPE html>
-<html lang="en">
+html,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-size: 10px;
+}
+::selection {
+	background-color: var(--second-color-light);
+}
+body {
+	background: white;
+	font-family: "Ubuntu", sans-serif; /*FW 300 400 500 700 */
+	overflow-x: hidden;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Style Css File -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Normalize Css File -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Google Icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <title>Zak</title>
-</head>
+/* Small Screens */
+@media (min-width: 768px) {
+	.cont {
+		width: 750px;
+	}
+}
+/* medium Screens */
+@media (min-width: 992px) {
+	.cont {
+		width: 970px;
+	}
+}
 
-<body ontouchstart="" onmouseover="">
+/* Large Screens */
+@media (min-width: 1200px) {
+	.cont {
+		width: 1150px;
+	}
+}
+/* Start Text Components */
 
-    <head>
-        <header>
-            <div class="cont">
-                <div class="logo">
-                    <a href="">Zak.</a>
-                </div>
-                <div class="links">
-                    <i class="fa-solid fa-bars"></i>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#abilities">Abilities</a></li>
-                        <li><a href="#work-space">Work Space</a></li>
-                        <li><a href="#work-space">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <div id="home" class="about">
-            <div class="cont">
-                <div class="image">
-                    <img src="imgs/Profile Pic.jpg" alt="">
-                </div>
-                <div class="hero-text">
-                    <h1>ZAKARIA HABABI</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur beatae similique
-                        consectetur dolorum excepturi, fugiat deleniti! Libero asperiores, porro quaerat cumque,
-                        eligendi maxime quod excepturi magni, voluptates aliquid quasi?</p>
-                </div>
-                <div class="social">
+.title {
+	max-inline-size: 500px;
+	margin-inline: auto;
+	text-align: center;
+}
+.title h1 {
+	color: var(--second-color);
+	font-size: clamp(3rem, 5vw, 4rem);
+}
+.title p {
+	color: var(--font-color);
+	font-size: clamp(1.5rem, 5vw, 2rem);
+	font-weight: 300;
+}
 
-                    <ul>
-                        <li>
-                            <a href="https://www.behance.net/zakariahababe">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/zakariahababe">
-                                <i class="fa-brands fa-square-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/zakariahababe">
-                                <i class="fa-brands fa-square-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/zakariahababe">
-                                <i class="fa-brands fa-square-behance"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="data"></div>
-                </div>
-            </div>
-        </div>
-    </head>
-    <div class="works" id="work-space">
-        <div class="cont">
-            <div class="title">
-                <h1>My Works</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-            </div>
-            <div class="box">
-                <div class="info">
-                    <div class="image">
-                        <img src="/imgs/works/1 (1).jpg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="/imgs/works/1 (2).jpg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="/imgs/works/1 (3).jpg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="/imgs/works/1 (4).jpg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="/imgs/works/1 (5).jpg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="/imgs/works/1 (6).jpg" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+/* Start Text Components */
 
-</body>
+/*  End Media Query */
 
-</html>
+.cont {
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+
+:root {
+	--first-color: black;
+	--first-color-light: #777;
+	--second-color: #6e8cb4;
+	--second-color-light: #d0e2fa;
+	--second-color-shadow: #bdcde263;
+	/* --font-color: #354457; */
+	--font-color: #465b75;
+	--main-padding: 60px;
+	--branch-padding: 20px;
+	--small-padding: 10px;
+	--tran: 0.5s;
+	--tran-2: 0.25s;
+}
+
+/* 
+    General Components
+*/
+head {
+	min-block-size: 100vh;
+}
+/* Start Header */
+
+header {
+	background-color: white;
+	block-size: 70px;
+	inline-size: 100%;
+	display: flex;
+	position: relative;
+	/* overflow-x: hidden; */
+}
+header .cont {
+	background-color: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	position: fixed;
+	/* position: absolute; */
+	width: inherit;
+	block-size: inherit;
+	z-index: 1;
+}
+header .cont .logo {
+	color: var(--first-color);
+	flex: 1;
+}
+header .cont .logo a {
+	font-size: clamp(30px, 4vw, 40px);
+	font-weight: 700;
+	color: var(--first-color);
+}
+@media (min-width: 768px) {
+	header .cont .links i {
+		display: none;
+	}
+}
+header .cont .links i {
+	color: var(--font-color);
+	font-size: 25px;
+}
+@media (min-width: 768px) {
+	header .cont .links {
+		block-size: 100%;
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+	}
+}
+
+header .cont .links ul {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 767px) {
+	header .cont .links ul {
+		position: absolute;
+		right: 0;
+		top: 100%;
+		block-size: 0%;
+		inline-size: 100%;
+		flex-direction: column;
+		justify-content: center;
+		transition: var(--tran-2);
+		-webkit-transition: var(--tran-2);
+		-moz-transition: var(--tran-2);
+		-ms-transition: var(--tran-2);
+		-o-transition: var(--tran-2);
+		opacity: 0;
+		z-index: -1;
+		/* overflow: hidden; */
+		box-shadow: 0px 20px 50px var(--second-color-shadow);
+	}
+}
+@media (max-width: 767px) {
+	header .cont .links ul::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		right: -10px;
+		background-color: transparent;
+		inline-size: 100px;
+		block-size: 30px;
+	}
+}
+@media (max-width: 767px) {
+	header .cont .links:hover ul {
+		block-size: 50vh;
+		opacity: 1;
+		z-index: 2;
+	}
+}
+header .cont .links ul li {
+	position: relative;
+	block-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+header .cont .links ul li::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	background-color: var(--second-color-shadow);
+	inline-size: 100%;
+	block-size: 0;
+	transition: var(--tran);
+	-webkit-transition: var(--tran);
+	-moz-transition: var(--tran);
+	-ms-transition: var(--tran);
+	-o-transition: var(--tran);
+	z-index: -1;
+	transform: translatex(-50%);
+	-webkit-transform: translatex(-50%);
+	-moz-transform: translatex(-50%);
+	-ms-transform: translatex(-50%);
+	-o-transform: translatex(-50%);
+}
+header .cont .links ul li:hover::before {
+	block-size: 3px;
+}
+@media (max-width: 767px) {
+	header .cont .links ul li:hover::before {
+		block-size: 100%;
+	}
+}
+@media (max-width: 767px) {
+	header .cont .links ul li {
+		inline-size: 100%;
+		padding-block: 0;
+	}
+}
+header .cont .links ul li a {
+	color: var(--second-color);
+	inline-size: 100%;
+	block-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-inline: var(--branch-padding);
+	font-size: clamp(14px, 2vw, 16px);
+	font-weight: 300;
+}
+header .cont .links ul li a:hover {
+	transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+}
+
+@media (max-width: 767px) {
+	header .cont .links ul li a {
+		inline-size: 100%;
+		block-size: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-inline: 0;
+		transition: var(--tran-2) linear;
+		-webkit-transition: var(--tran-2) linear;
+		-moz-transition: var(--tran-2) linear;
+		-ms-transition: var(--tran-2) linear;
+		-o-transition: var(--tran-2) linear;
+	}
+}
+
+/* End Header */
+/* Start aboutign Page */
+
+.about {
+	padding-block: 20px var(--main-padding);
+	block-size: calc(100vh - 70px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	/* z-index: 1; */
+}
+
+.about .cont {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+.about .cont .image {
+	max-inline-size: 300px;
+	margin-inline: auto;
+	position: relative;
+}
+.about .cont .image::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	background-color: var(--second-color-light);
+	inline-size: fit-content;
+	block-size: 50%;
+	inline-size: 50%;
+	z-index: -1;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.about .cont .image img {
+	max-inline-size: 100%;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.about .cont .hero-text {
+	max-inline-size: 700px;
+}
+.about .cont .hero-text h1 {
+	color: var(--second-color);
+	font-size: clamp(3rem, 8vmin, 7rem);
+	margin-block: 0 2rem;
+}
+.about .cont .hero-text p {
+	color: var(--font-color);
+	padding-block: 0 30px;
+	font-size: clamp(1.5rem, 2vw, 2rem);
+	font-weight: 300;
+	line-height: 1.5;
+}
+@media (max-width: 767px) {
+	.about .cont .hero-text p {
+		/* padding-block: 0 40px; */
+	}
+}
+
+.about .cont .social {
+	position: absolute;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 767px) {
+	.about .cont .social {
+		bottom: 40px;
+	}
+}
+.about .cont .social ul {
+	/* background-color: var(--second-color-light); */
+	inline-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 5px;
+	opacity: 0;
+	z-index: -1;
+	transform: translatey(5px);
+	-webkit-transform: translatey(4px);
+	-moz-transform: translatey(4px);
+	-ms-transform: translatey(4px);
+	-o-transform: translatey(4px);
+	transition: var(--tran-2) linear;
+	-webkit-transition: var(--tran-2) linear;
+	-moz-transition: var(--tran-2) linear;
+	-ms-transition: var(--tran-2) linear;
+	-o-transition: var(--tran-2) linear;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.about .cont .social:hover ul {
+	inline-size: 100%;
+
+	opacity: 1;
+	z-index: 1;
+	transform: translatey(-10px);
+	-webkit-transform: translatey(-10px);
+	-moz-transform: translatey(-10px);
+	-ms-transform: translatey(-10px);
+	-o-transform: translatey(-10px);
+}
+.about .cont .social ul li {
+}
+.about .cont .social ul li a {
+}
+.about .cont .social ul li i {
+	color: var(--second-color);
+	font-size: clamp(3rem, 2vw, 3.5rem);
+	transition: var(--tran-2) linear;
+	-webkit-transition: var(--tran-2) linear;
+	-moz-transition: var(--tran-2) linear;
+	-ms-transition: var(--tran-2) linear;
+	-o-transition: var(--tran-2) linear;
+}
+.about .cont .social ul li i:hover {
+	transform: scale(1.06);
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+}
+.about .cont .social .data {
+	/*background-color:var(--font-color);
+	*/
+	inline-size: 30px;
+	block-size: 30px;
+	border: 2px solid var(--font-color);
+	position: relative;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	align-self: center;
+}
+.about .cont .social .data::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	/*background-color: var(--font-color);
+	*/
+	inline-size: 70%;
+	block-size: 70%;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	transition: var(--tran-2);
+	-webkit-transition: var(--tran-2);
+	-moz-transition: var(--tran-2);
+	-ms-transition: var(--tran-2);
+	-o-transition: var(--tran-2);
+	animation: scale 4s linear infinite;
+	-webkit-animation: scale 2.6s ease-out infinite;
+	border: 2px solid var(--font-color);
+}
+.about .cont .social .data:hover::before {
+	top: -30%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	animation: none;
+	-webkit-animation: none;
+}
+/* End aboutign Page */
+
+/* Start Works */
+
+.works {
+	/* background-color: var(--second-color-light); */
+	block-size: calc(auto - 70px);
+	padding-block: var(--main-padding);
+}
+
+.works .cont {
+}
+.works .cont .box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	padding-block: 40px 0;
+}
+.works .cont .box .info {
+	/* background-color: rgb(195, 0, 0); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 0px 0px 20px var(--second-color-shadow);
+}
+.works .cont .box .info .image {
+	inline-size: 100%;
+	padding-block: 0 20px;
+	flex: 1;
+}
+.works .cont .box .info .image img {
+	max-inline-size: 100%;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.works .cont .box .info .info-text {
+	align-self: flex-end;
+}
+@media (max-width: 767px) {
+	.works .cont .box .info .info-text {
+		text-align: center;
+	}
+}
+.works .cont .box .info .info-text h3 {
+	color: var(--second-color);
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	padding-block: 0 10px;
+}
+.works .cont .box .info .info-text p {
+	color: var(--font-color);
+	font-size: clamp(1.5rem, 2vw, 1.6rem);
+	font-weight: 300;
+	line-height: 1.5;
+}
+/* End Works */
+
+/* Start Keyframes */
+
+@keyframes scale {
+	0% {
+		inline-size: 90%;
+		block-size: 90%;
+		opacity: 1;
+	}
+	50% {
+		inline-size: 0%;
+		block-size: 0%;
+		opacity: 0.1;
+	}
+	100% {
+		inline-size: 90%;
+		block-size: 90%;
+		opacity: 1;
+	}
+}
+
+/* End Keyframes */
