@@ -1,3 +1,3 @@
 # zak.com
 [Demo](https://sfwnisme.github.io/zak.com/)
-![Zak.](imgs/Profile Pic.jpg)
+![Image](Zak.com%20Monitor%20View.png)
