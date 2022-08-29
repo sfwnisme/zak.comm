@@ -77,7 +77,7 @@ body {
 	box-shadow: 0px 0px 20px var(--second-color-shadow);
 }
 .cont .box .info .image {
-/* 	display: flex; ==> Will Streach The Image And Will Complicate It*/
+/* 	display: flex; ==> Will Streach The Image And Will Complicate It We Can Using Grid For Future Centered Hover If We Like Or Adding display:flex; align-items: flex-start*/
 	inline-size: 100%;
 	padding-block: 0 20px;
 /* 	flex: 1; */ 
