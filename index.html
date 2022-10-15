@@ -1,320 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Style Css File -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Normalize Css File -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Google Icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Zak</title>
-</head>
+  </head>
 
-<body ontouchstart="" onmouseover="">
-
+  <body ontouchstart="" onmouseover="">
     <head>
-        <header>
-            <div class="cont">
-                <div class="logo">
-                    <a href="">Zak.</a>
-                </div>
-                <div class="links">
-                    <i class="fa-solid fa-bars"></i>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#clients">Clients</a></li>
-                        <li><a href="#work-space">Work Space</a></li>
-                        <li><a href="#logos">Logos</a></li>
-                        <li><a href="#proficiency">Proficiency</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <div id="home" class="about">
-            <div class="cont">
-                <div class="image">
-                    <img src="imgs/Profile Pic.jpg" alt="">
-                </div>
-                <div class="hero-text">
-                    <h1>ZAKARIA HABABI</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur beatae similique
-                        consectetur dolorum excepturi, fugiat deleniti! Libero asperiores, porro quaerat cumque,
-                        eligendi maxime quod excepturi magni, voluptates aliquid quasi?</p>
-                </div>
-                <div class="social">
-
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/zhababe">
-                                <i class="fa-brands fa-square-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/zakariahababe/">
-                                <i class="fa-brands fa-square-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/zakariahababe">
-                                <i class="fa-brands fa-square-behance"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://linkedin.com/in/zakaria-yahya-997710131/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="data"></div>
-                </div>
-            </div>
+      <header>
+        <div class="cont">
+          <div class="logo">
+            <a href="">Zak.</a>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#clients">Clients</a></li>
+              <li><a href="#work-space">Work Space</a></li>
+              <li><a href="#logos">Logos</a></li>
+              <li><a href="#proficiency">Proficiency</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
         </div>
+      </header>
+      <div id="home" class="about">
+        <div class="cont">
+          <div class="image" data-aos="fade-right">
+            <img src="imgs/Profile Pic.jpg" alt="" />
+          </div>
+          <div class="hero-text" data-aos="fade-left">
+            <h1>ZAKARIA HABABI</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              consequatur beatae similique consectetur dolorum excepturi, fugiat
+              deleniti! Libero asperiores, porro quaerat cumque, eligendi maxime
+              quod excepturi magni, voluptates aliquid quasi?
+            </p>
+          </div>
+          <div class="social" data-aos="fade-up">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/zhababe">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/zakariahababe/">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/zakariahababe">
+                  <i class="fa-brands fa-square-behance"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://linkedin.com/in/zakaria-yahya-997710131/">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="data"></div>
+          </div>
+        </div>
+      </div>
     </head>
     <div class="clients" id="clients">
-        <div class="cont">
-            <div class="title">
-                <h1>Clients</h1>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="imgs/clients/facebook.png" alt="">
-                </div>
-                <div class="image">
-                    <img src="imgs/clients/Instagram.png" alt="">
-                </div>
-                <div class="image">
-                    <img src="imgs/clients/twitter.png" alt="">
-                </div>
-                <div class="image">
-                    <img src="imgs/clients/behance.png" alt="">
-                </div>
-            </div>
+      <div class="cont">
+        <div class="title">
+          <h1>Clients</h1>
         </div>
+        <div class="box">
+          <div
+            class="image"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            >
+            <img src="imgs/clients/facebook.png" alt="" />
+          </div>
+          <div
+            class="image"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            >
+            <img src="imgs/clients/Instagram.png" alt="" />
+          </div>
+          <div
+            class="image"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            >
+            <img src="imgs/clients/twitter.png" alt="" />
+          </div>
+          <div
+            class="image"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            >
+            <img src="imgs/clients/behance.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="works" id="work-space">
-        <div class="cont">
-            <div class="title">
-                <h1>Work Space</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-            </div>
-            <div class="box">
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/works/1 (1).webp" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/works/1 (2).webp" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/works/1 (3).webp" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/works/1 (4).webp" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/works/1 (5).webp" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/works/1 (6).webp" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-            </div>
+      <div class="cont">
+        <div class="title">
+          <h1>Work Space</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          </p>
         </div>
+        <div class="box">
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/works/1 (1).webp" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/works/1 (2).webp" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/works/1 (3).webp" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/works/1 (4).webp" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/works/1 (5).webp" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/works/1 (6).webp" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="logos" id="logos">
-        <div class="cont">
-            <div class="title">
-                <h1>Logos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-            </div>
-            <div class="box">
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/Logos/White Background/Logo 1.png" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Nass FM</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/Logos/White Background/Logo 2.png" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Islamic Insurance</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/Logos/White Background/Logo 3.png" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Clanood</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/Logos/White Background/Logo 4.png" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Belqees</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/Logos/White Background/Logo 5.png" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Fifth Color</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="image">
-                        <img src="imgs/Logos/White Background/Logo 6.png" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h3>Balanced Score</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-                    </div>
-                </div>
-            </div>
+      <div class="cont">
+        <div class="title">
+          <h1>Logos</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          </p>
         </div>
+        <div class="box">
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/Logos/White Background/Logo 1.png" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Nass FM</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/Logos/White Background/Logo 2.png" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Islamic Insurance</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/Logos/White Background/Logo 3.png" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Clanood</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/Logos/White Background/Logo 4.png" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Belqees</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/Logos/White Background/Logo 5.png" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Fifth Color</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+          <div class="info" data-aos="fade-up">
+            <div class="image">
+              <img src="imgs/Logos/White Background/Logo 6.png" alt="" />
+            </div>
+            <div class="info-text">
+              <h3>Balanced Score</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="prof" id="proficiency">
-        <div class="cont">
-            <div class="title">
-                <h1>Proficiency</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
-            </div>
-            <div class="info">
-                <div class="image">
-                    <img src="imgs/works/1 (53).jpg" alt="">
-                </div>
-                <div class="skill-box">
-                    <div class="skill">
-                        <div class="image">
-                            <img src="imgs/proficiency/photoshop.png" alt="">
-                        </div>
-                        <div class="skill-text">
-                            <h3>Photoshop</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="image">
-                            <img src="imgs/proficiency/illustrator.png" alt="">
-                        </div>
-                        <div class="skill-text">
-                            <h3>Illustrator</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="image">
-                            <img src="imgs/proficiency/branding.webp" alt="">
-                        </div>
-                        <div class="skill-text">
-                            <h3>Branding</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="cont">
+        <div class="title">
+          <h1>Proficiency</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          </p>
         </div>
+        <div class="info" data-aos="fade-up">
+          <div class="image">
+            <img src="imgs/works/1 (53).jpg" alt="" />
+          </div>
+          <div class="skill-box">
+            <div class="skill">
+              <div class="image">
+                <img src="imgs/proficiency/photoshop.png" alt="" />
+              </div>
+              <div class="skill-text">
+                <h3>Photoshop</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Accusamus
+                </p>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="image">
+                <img src="imgs/proficiency/illustrator.png" alt="" />
+              </div>
+              <div class="skill-text">
+                <h3>Illustrator</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Accusamus
+                </p>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="image">
+                <img src="imgs/proficiency/branding.webp" alt="" />
+              </div>
+              <div class="skill-text">
+                <h3>Branding</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Accusamus
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <div class="title" id="footer">
-            <h1><a href="">Zak.</a></h1>
+      <div class="title" id="footer">
+        <h1><a href="">Zak.</a></h1>
+      </div>
+      <div class="cont">
+        <div class="box">
+          <div class="info brief">
+            <h3>Brief</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              necessitatibus magni incidunt nihil, reprehenderit sint pariatur
+              commodi laborum reiciendis ipsum vero eius earum dolor atque hic
+              laudantium ipsa omnis porro?
+            </p>
+            <a href="">Hire Me</a>
+          </div>
+          <div class="info Contact">
+            <h3>Contact</h3>
+            <p>
+              <a href="https://www.facebook.com/zhababe" target="_blank"
+                >Facebook</a
+              >
+            </p>
+            <p>
+              <a href="https://www.instagram.com/zakariahababe/" target="_blank"
+                >Instagram</a
+              >
+            </p>
+            <p>
+              <a
+                href="http://linkedin.com/in/zakaria-yahya-997710131/"
+                target="_blank"
+                >LinkdIn</a
+              >
+            </p>
+            <p>
+              <a href="https://www.behance.net/zakariahababe" target="_blank"
+                >Behance</a
+              >
+            </p>
+            <p><a href="" target="_blank">Email</a></p>
+          </div>
+          <div class="info other-links">
+            <h3>Other Links</h3>
+            <p><a href="#clients">Clients</a></p>
+            <p><a href="#work-space">Works Space</a></p>
+            <p><a href="#logos">Logos</a></p>
+          </div>
         </div>
-        <div class="cont">
-            <div class="box">
-                <div class="info brief">
-                    <h3>Brief</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, necessitatibus magni
-                        incidunt nihil, reprehenderit sint pariatur commodi laborum reiciendis ipsum vero eius earum
-                        dolor atque hic laudantium ipsa omnis porro?</p>
-                    <a href="">Hire Me</a>
-                </div>
-                <div class="info Contact">
-                    <h3>Contact</h3>
-                    <p><a href="https://www.facebook.com/zhababe" target="_blank">Facebook</a></p>
-                    <p><a href="https://www.instagram.com/zakariahababe/" target="_blank">Instagram</a></p>
-                    <p><a href="http://linkedin.com/in/zakaria-yahya-997710131/" target="_blank">LinkdIn</a></p>
-                    <p><a href="https://www.behance.net/zakariahababe" target="_blank">Behance</a></p>
-                    <p><a href="" target="_blank">Email</a></p>
-                </div>
-                <div class="info other-links">
-                    <h3>Other Links</h3>
-                    <p><a href="#clients">Clients</a></p>
-                    <p><a href="#work-space">Works Space</a></p>
-                    <p><a href="#logos">Logos</a></p>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
     <main>
-        <div class="cont">
-            <span>Implemented By <a href="https://github.com/sfwnisme"><img src="imgs/sfwnLogo.png" alt=""></a></span>
-        </div>
+      <div class="cont">
+        <span
+          >Implemented By
+          <a href="https://github.com/sfwnisme"
+            ><img src="imgs/sfwnLogo.png" alt="" /></a
+        ></span>
+      </div>
     </main>
-</body>
-
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
