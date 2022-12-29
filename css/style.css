@@ -6,6 +6,63 @@ html,
   scroll-behavior: smooth;
   font-size: 10px;
 }
+.hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  z-index: 11111;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.hide-fade {
+  height: 0vh;
+  width: 0vw;
+  opacity: 1;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: var(--preload_now);
+  -webkit-transition: var(--preload_now);
+  -moz-transition: var(--preload_now);
+  -ms-transition: var(--preload_now);
+  -o-transition: var(--preload_now);
+}
+.hide div {
+  /*background-color: red;
+  */
+  height: 100px;
+  width: 100px;
+  animation: rotate 1s;
+  -webkit-animation: rotate var(--preload_now) ease-in-out;
+  border: yellow 10px solid;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg) scale(0.6);
+    -webkit-transform: rotate(360deg) scale(0.6);
+    -moz-transform: rotate(360deg) scale(0.6);
+    -ms-transform: rotate(360deg) scale(0.6);
+    -o-transform: rotate(360deg) scale(0.6);
+  }
+}
 
 ::selection {
   background-color: var(--second-color-light);
@@ -135,6 +192,7 @@ body {
   --small-padding: 10px;
   --tran: 0.5s;
   --tran-2: 0.25s;
+  --preload_now: ;
 }
 
 /* 
