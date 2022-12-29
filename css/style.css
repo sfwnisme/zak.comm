@@ -6,6 +6,7 @@ html,
   scroll-behavior: smooth;
   font-size: 10px;
 }
+
 ::selection {
   background-color: var(--second-color-light);
 }
@@ -14,11 +15,6 @@ body {
   font-family: "Ubuntu", sans-serif;
   /*FW300400500700*/
   overflow-x: hidden;
-  transition: 1s !important;
-  -webkit-transition: 1s !important;
-  -moz-transition: 1s !important;
-  -ms-transition: 1s !important;
-  -o-transition: 1s !important;
 }
 
 /* Small Screens */
@@ -214,11 +210,7 @@ header .cont .links ul {
     inline-size: 100%;
     flex-direction: column;
     justify-content: center;
-    transition: var(--tran-2);
-    -webkit-transition: var(--tran-2);
-    -moz-transition: var(--tran-2);
-    -ms-transition: var(--tran-2);
-    -o-transition: var(--tran-2);
+
     opacity: 0;
     z-index: -1;
     box-shadow: 0px 20px 50px var(--second-color-shadow);
@@ -258,11 +250,7 @@ header .cont .links ul li::before {
   background-color: var(--second-color-shadow);
   inline-size: 100%;
   block-size: 0;
-  transition: var(--tran);
-  -webkit-transition: var(--tran);
-  -moz-transition: var(--tran);
-  -ms-transition: var(--tran);
-  -o-transition: var(--tran);
+
   z-index: -1;
   transform: translatex(-50%);
   -webkit-transform: translatex(-50%);
@@ -311,11 +299,6 @@ header .cont .links ul li a:hover {
     align-items: center;
     justify-content: center;
     padding-inline: 0;
-    transition: var(--tran-2) linear;
-    -webkit-transition: var(--tran-2) linear;
-    -moz-transition: var(--tran-2) linear;
-    -ms-transition: var(--tran-2) linear;
-    -o-transition: var(--tran-2) linear;
   }
 }
 
@@ -416,11 +399,7 @@ header .cont .links ul li a:hover {
   -moz-transform: translatey(4px);
   -ms-transform: translatey(4px);
   -o-transform: translatey(4px);
-  transition: var(--tran-2) linear;
-  -webkit-transition: var(--tran-2) linear;
-  -moz-transition: var(--tran-2) linear;
-  -ms-transition: var(--tran-2) linear;
-  -o-transition: var(--tran-2) linear;
+
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -448,11 +427,6 @@ header .cont .links ul li a:hover {
 .about .cont .social ul li i {
   color: var(--second-color);
   font-size: clamp(3rem, 2vw, 3.5rem);
-  transition: var(--tran-2) linear;
-  -webkit-transition: var(--tran-2) linear;
-  -moz-transition: var(--tran-2) linear;
-  -ms-transition: var(--tran-2) linear;
-  -o-transition: var(--tran-2) linear;
 }
 .about .cont .social ul li i:hover {
   transform: scale(1.06);
@@ -490,11 +464,7 @@ header .cont .links ul li a:hover {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
-  transition: var(--tran-2);
-  -webkit-transition: var(--tran-2);
-  -moz-transition: var(--tran-2);
-  -ms-transition: var(--tran-2);
-  -o-transition: var(--tran-2);
+
   animation: scale 4s linear infinite;
   -webkit-animation: scale 4s linear infinite;
   border: 2px solid var(--font-color);
@@ -564,11 +534,6 @@ header .cont .links ul li a:hover {
   box-shadow: 0px 0px 20px var(--second-color-shadow);
 }
 .info {
-  transition: 1s !important;
-  -webkit-transition: 1s !important;
-  -moz-transition: 1s !important;
-  -ms-transition: 1s !important;
-  -o-transition: 1s !important;
 }
 .works .cont .box .info .image {
   inline-size: 100%;
@@ -658,11 +623,7 @@ header .cont .links ul li a:hover {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 20px var(--second-color-shadow);
-  transition: var(--tran-2);
-  -webkit-transition: var(--tran-2);
-  -moz-transition: var(--tran-2);
-  -ms-transition: var(--tran-2);
-  -o-transition: var(--tran-2);
+
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -769,11 +730,7 @@ footer .cont .box .brief a {
   font-size: clamp(1.5rem, 2vw, 1.6rem);
   display: inline-block;
   padding: 10px 30px;
-  transition: var(--tran-2);
-  -webkit-transition: var(--tran-2);
-  -moz-transition: var(--tran-2);
-  -ms-transition: var(--tran-2);
-  -o-transition: var(--tran-2);
+
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
